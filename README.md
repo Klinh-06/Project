@@ -3,6 +3,59 @@
 Ứng dụng React Native (Expo) dành cho bệnh nhân: tìm kiếm bác sĩ, đặt lịch khám, quản lý hồ sơ y tế và theo dõi lịch hẹn.
 
 ---
+## Danh sách thành viên
+
+| Họ tên | MSSV | Phân  |
+|--------|------|--------|
+| Nguyễn Thị Hồng Nhung | 23810340032 | Auth + Home + Navigation |
+| Nguyễn Thị Diễm Quỳnh | 23810310350 | Doctor + Appointment |
+| Nguyễn Thị Khánh Linh | 23810310394 | Records + Profile + Notification |
+
+📌 Phân công nhiệm vụ
+🧑 Nguyễn Thị Hồng Nhung — Auth, Home & Navigation
+
+Chịu trách nhiệm toàn bộ luồng khởi tạo và điều hướng của ứng dụng:
+
+Xây dựng hệ thống đăng nhập / đăng ký / quên mật khẩu
+Quản lý luồng navigation toàn app
+Phát triển màn hình Home
+Quản lý trạng thái người dùng qua AppContext
+Tối ưu UI, text, button và luồng chuyển màn
+👩 Nguyễn Thị Diễm Quỳnh — Doctor & Appointment
+
+Phụ trách toàn bộ chức năng liên quan đến bác sĩ và đặt lịch:
+
+Danh sách 50 bác sĩ theo chuyên khoa
+Màn hình chi tiết bác sĩ
+Chức năng đặt lịch khám
+Quản lý lịch hẹn (sắp tới / đã khám / đã hủy)
+Xử lý logic chống trùng lịch
+Cập nhật dữ liệu bác sĩ và khung giờ khám
+👩 Nguyễn Thị Khánh Linh — Records, Profile & Notifications
+
+Phụ trách hệ thống hồ sơ và cá nhân người dùng:
+
+Hồ sơ bệnh án (Medical Records)
+Chi tiết hồ sơ khám bệnh
+Trang cá nhân (Profile)
+Cài đặt tài khoản (đổi mật khẩu, PIN bảo mật)
+Hệ thống thông báo (Notifications)
+Tối ưu UI và theme toàn app
+
+---
+
+## Công nghệ sử dụng
+
+| Thư viện | Mục đích |
+|----------|----------|
+| React Native + Expo SDK 54 | Framework chính |
+| @react-navigation/native-stack | Điều hướng stack |
+| @react-navigation/bottom-tabs | Tab bar |
+| react-native-safe-area-context | Hỗ trợ notch / Dynamic Island |
+| @react-native-async-storage | Lưu trữ dữ liệu local |
+| @expo/vector-icons (Ionicons) | Bộ icon |
+
+---
 
 ## Cài đặt & Chạy
 
@@ -192,17 +245,6 @@ MediCare/
 
 ---
 
-## Công nghệ sử dụng
 
-| Thư viện | Mục đích |
-|----------|----------|
-| React Native + Expo SDK 54 | Framework chính |
-| @react-navigation/native-stack | Điều hướng stack |
-| @react-navigation/bottom-tabs | Tab bar |
-| react-native-safe-area-context | Hỗ trợ notch / Dynamic Island |
-| @react-native-async-storage | Lưu trữ dữ liệu local |
-| @expo/vector-icons (Ionicons) | Bộ icon |
-
----
 
 *Phiên bản 1.1.0*
