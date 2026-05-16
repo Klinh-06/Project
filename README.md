@@ -234,6 +234,11 @@ https://www.figma.com/design/IZ7ZaRCq5f2WdoZNEVrZmS/mobile?node-id=0-1&t=fmizL3u
 
 ---
 
+## Video demo
+https://drive.google.com/file/d/1Pl5qiiS7UcPzPBdToygTB3_3UluUxU4S/view?usp=drive_link
+
+---
+
 ## Dữ liệu mẫu
 
 Lần chạy đầu tiên app tự nạp (chỉ tài khoản demo):
