@@ -235,7 +235,7 @@ https://www.figma.com/design/IZ7ZaRCq5f2WdoZNEVrZmS/mobile?node-id=0-1&t=fmizL3u
 ---
 
 ## Video demo
-https://drive.google.com/file/d/1Pl5qiiS7UcPzPBdToygTB3_3UluUxU4S/view?usp=drive_link
+(https://drive.google.com/file/d/1F7HWDjo_FI5qENQaw1tFp-MQV5WBsOhI/view?usp=drive_link)
 
 ---
 
