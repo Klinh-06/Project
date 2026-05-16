@@ -52,7 +52,7 @@ Ngoài ra, MediCare+ còn hỗ trợ quản lý hồ sơ bệnh án điện tử
 | @react-navigation/native-stack | Điều hướng stack |
 | @react-navigation/bottom-tabs | Tab bar |
 | react-native-safe-area-context | Hỗ trợ notch / Dynamic Island |
-| @react-native-async-storage | Lưu trữ dữ liệu local |
+| @react-native-async-storage/async-storage | Lưu trữ dữ liệu local |
 | @expo/vector-icons (Ionicons) | Bộ icon |
 
 ---
