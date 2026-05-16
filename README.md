@@ -229,6 +229,11 @@ Quét mã QR bằng **Expo Go** trên điện thoại (cùng mạng WiFi).
 
 ---
 
+## Link figma
+https://www.figma.com/design/IZ7ZaRCq5f2WdoZNEVrZmS/mobile?node-id=0-1&t=fmizL3upS3SXnUy0-1
+
+---
+
 ## Dữ liệu mẫu
 
 Lần chạy đầu tiên app tự nạp (chỉ tài khoản demo):
