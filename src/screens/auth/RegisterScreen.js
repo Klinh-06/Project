@@ -63,7 +63,57 @@ export default function RegisterScreen({ navigation }) {
       setLoading(false);
     }
   };
+  
+    return (
+    <SafeAreaView style={styles.safe}>
+      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'height' : undefined} style={{ flex: 1 }}>
+        <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="always">
+          <View style={styles.topBar}>
+            <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
+              <Ionicons name="arrow-back" size={24} color={Colors.white} />
+            </TouchableOpacity>
+            <Text style={styles.topTitle}>Tạo tài khoản</Text>
+            <View style={{ width: 40 }} />
+          </View>
+
+          <View style={styles.card}>
+            <Text style={styles.title}>Đăng ký</Text>
+            <Text style={styles.subtitle}>Mỗi CCCD tương ứng một sổ bệnh án cá nhân</Text>
+
+            <Field label="Họ và tên" icon="person-outline" value={form.fullName}
+              onChangeText={v => update('fullName', v)} placeholder="Nhập họ và tên" />
+            <Field label="Số CCCD / CMND" icon="card-outline" value={form.cccd}
+              onChangeText={v => update('cccd', v)} placeholder="Nhập đúng 12 số CCCD"
+              keyboardType="number-pad" maxLength={12} />
+            <Field label="Mật khẩu" icon="lock-closed-outline" value={form.password}
+              onChangeText={v => update('password', v)} placeholder="Tối thiểu 6 ký tự"
+              secureTextEntry={!showPw}
+              rightIcon={
+                <TouchableOpacity onPress={() => setShowPw(p => !p)}>
+                  <Ionicons name={showPw ? 'eye-off-outline' : 'eye-outline'} size={20} color={Colors.textSecondary} />
+                </TouchableOpacity>
+              } />
+            <Field label="Xác nhận mật khẩu" icon="shield-checkmark-outline" value={form.confirm}
+              onChangeText={v => update('confirm', v)} placeholder="Nhập lại mật khẩu"
+              secureTextEntry={!showPw} />
+
+            <TouchableOpacity style={[styles.btn, loading && { opacity: 0.7 }]} onPress={handleRegister} disabled={loading}>
+              <Text style={styles.btnText}>{loading ? 'Đang đăng ký...' : 'Đăng ký'}</Text>
+            </TouchableOpacity>
+
+            <View style={styles.loginRow}>
+              <Text style={styles.loginText}>Đã có tài khoản? </Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                <Text style={styles.loginLink}>Đăng nhập</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
+  );
 }
+
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.primary },
