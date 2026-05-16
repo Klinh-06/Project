@@ -1,6 +1,12 @@
 # MediCare+ — Ứng dụng Đặt lịch Khám bệnh
 
-Ứng dụng React Native (Expo) dành cho bệnh nhân: tìm kiếm bác sĩ, đặt lịch khám, quản lý hồ sơ y tế và theo dõi lịch hẹn.
+MediCare+ là một ứng dụng di động được xây dựng bằng React Native (Expo), mô phỏng hệ thống đặt lịch khám bệnh tại phòng khám. Ứng dụng giúp bệnh nhân dễ dàng tìm kiếm bác sĩ, đặt lịch khám, quản lý lịch hẹn và theo dõi hồ sơ y tế cá nhân một cách tiện lợi và nhanh chóng.
+
+Hệ thống được thiết kế nhằm tối ưu trải nghiệm người dùng với giao diện thân thiện, dễ sử dụng và luồng thao tác rõ ràng. Người dùng có thể đăng ký tài khoản bằng số CCCD, đăng nhập để truy cập hệ thống, lựa chọn bác sĩ theo chuyên khoa, đặt lịch khám theo khung giờ và theo dõi lịch sử khám bệnh.
+
+Ngoài ra, MediCare+ còn hỗ trợ quản lý hồ sơ bệnh án điện tử, thông báo trạng thái lịch hẹn (đặt lịch, hủy lịch, thay đổi lịch) và cung cấp các tính năng bảo mật như mã PIN bảo vệ hồ sơ cá nhân.
+
+Ứng dụng hoạt động hoàn toàn offline bằng AsyncStorage, không cần backend, phù hợp cho mục đích học tập và mô phỏng hệ thống thực tế.
 
 ---
 ## Danh sách thành viên
@@ -14,27 +20,27 @@
 ### Phân công nhiệm vụ
 #### Nguyễn Thị Hồng Nhung — Auth, Home & Navigation: Chịu trách nhiệm toàn bộ luồng khởi tạo và điều hướng của ứng dụng:
 
--Xây dựng hệ thống đăng nhập / đăng ký / quên mật khẩu
--Quản lý luồng navigation toàn app
--Phát triển màn hình Home
--Quản lý trạng thái người dùng qua AppContext
--Tối ưu UI, text, button và luồng chuyển màn
+- Xây dựng hệ thống đăng nhập / đăng ký / quên mật khẩu
+- Quản lý luồng navigation toàn app
+- Phát triển màn hình Home
+- Quản lý trạng thái người dùng qua AppContext
+- Tối ưu UI, text, button và luồng chuyển màn
 #### Nguyễn Thị Diễm Quỳnh — Doctor & Appointment: Phụ trách toàn bộ chức năng liên quan đến bác sĩ và đặt lịch:
 
--Danh sách 50 bác sĩ theo chuyên khoa
--Màn hình chi tiết bác sĩ
--Chức năng đặt lịch khám
--Quản lý lịch hẹn (sắp tới / đã khám / đã hủy)
--Xử lý logic chống trùng lịch
--Cập nhật dữ liệu bác sĩ và khung giờ khám
+- Danh sách 50 bác sĩ theo chuyên khoa
+- Màn hình chi tiết bác sĩ
+- Chức năng đặt lịch khám
+- Quản lý lịch hẹn (sắp tới / đã khám / đã hủy)
+- Xử lý logic chống trùng lịch
+- Cập nhật dữ liệu bác sĩ và khung giờ khám
 #### Nguyễn Thị Khánh Linh — Records, Profile & Notifications: Phụ trách hệ thống hồ sơ và cá nhân người dùng:
 
--Hồ sơ bệnh án (Medical Records)
--Chi tiết hồ sơ khám bệnh
--Trang cá nhân (Profile)
--Cài đặt tài khoản (đổi mật khẩu, PIN bảo mật)
--Hệ thống thông báo (Notifications)
--Tối ưu UI và theme toàn app
+- Hồ sơ bệnh án (Medical Records)
+- Chi tiết hồ sơ khám bệnh
+- Trang cá nhân (Profile)
+- Cài đặt tài khoản (đổi mật khẩu, PIN bảo mật)
+- Hệ thống thông báo (Notifications)
+- Tối ưu UI và theme toàn app
 
 ---
 
@@ -70,6 +76,156 @@ Quét mã QR bằng **Expo Go** trên điện thoại (cùng mạng WiFi).
 | `079190012345` | `123456` | Nguyễn Văn An |
 
 > Hoặc tạo tài khoản mới qua màn hình **Đăng ký**.
+
+---
+## Hình ảnh minh họa hệ thống
+## 🖼️ Giao diện hệ thống
+
+### 🔐 Trang đăng nhập
+<p align="center">
+  <img src="./assets/login.png" width="300"/>
+</p>
+
+### 🔑 Trang quên mật khẩu
+<p align="center">
+  <img src="./assets/forgot_password.png" width="300"/>
+</p>
+
+### 📝 Trang đăng ký
+<p align="center">
+  <img src="./assets/register.png" width="300"/>
+</p>
+
+### 🏠 Trang chủ
+<p align="center">
+  <img src="./assets/home.png" width="300"/>
+</p>
+
+### 🏥 Trang thông tin phòng khám
+<p align="center">
+  <img src="./assets/clinic_info.png" width="300"/>
+  <img src="./assets/clinic_info(2).png" width="300"/>
+</p>
+
+### 🔍 Trang tìm kiếm bác sĩ
+<p align="center">
+  <img src="./assets/search.png" width="300"/>
+</p>
+
+### 🩺 Trang danh sách chuyên khoa
+<p align="center">
+  <img src="./assets/specialty_list.png" width="300"/>
+</p>
+
+### 👨‍⚕️ Trang danh sách bác sĩ
+<p align="center">
+  <img src="./assets/doctor_list.png" width="300"/>
+</p>
+
+### 📄 Trang chi tiết bác sĩ
+<p align="center">
+  <img src="./assets/doctor_detail.png" width="300"/>
+  <img src="./assets/doctor_detail(2).png" width="300"/>
+  <img src="./assets/doctor_detail(3).png" width="300"/>
+</p>
+
+### 📅 Trang đặt lịch khám
+<p align="center">
+  <img src="./assets/book_appointment.png" width="300"/>
+</p>
+
+### ✅ Trang xác nhận đặt lịch
+<p align="center">
+  <img src="./assets/appointment_confirm.png" width="300"/>
+  <img src="./assets/appointment_confirm(2).png" width="300"/>
+  <img src="./assets/appointment_confirm(3).png" width="300"/>
+</p>
+
+### 🎉 Trang đặt lịch thành công
+<p align="center">
+  <img src="./assets/booking_success.png" width="300"/>
+</p>
+
+### ⏰ Trang lịch hẹn sắp tới
+<p align="center">
+  <img src="./assets/upcoming_appointment.png" width="300"/>
+</p>
+
+### 🔄 Trang đổi lịch khám
+<p align="center">
+  <img src="./assets/resvhedule_appointment.png" width="300"/>
+</p>
+
+### 📋 Trang chi tiết lịch khám
+<p align="center">
+  <img src="./assets/appointment_detail.png" width="300"/>
+  <img src="./assets/appointment_detail(2).png" width="300"/>
+</p>
+
+### ✔️ Trang lịch đã khám
+<p align="center">
+  <img src="./assets/completed_appointment.png" width="300"/>
+</p>
+
+### 🧪 Trang kết quả khám bệnh
+<p align="center">
+  <img src="./assets/medical_result.png" width="300"/>
+  <img src="./assets/medical_result(2).png" width="300"/>
+</p>
+
+### ⭐ Trang đánh giá bác sĩ
+<p align="center">
+  <img src="./assets/review_doctor.png" width="300"/>
+</p>
+
+### ❌ Trang lịch hẹn đã hủy
+<p align="center">
+  <img src="./assets/cancelked_appointment.png" width="300"/>
+</p>
+
+### 🔐 Trang nhập mã PIN
+<p align="center">
+  <img src="./assets/verify_pin.png" width="300"/>
+</p>
+
+### 📂 Trang hồ sơ bệnh án
+<p align="center">
+  <img src="./assets/medical_records.png" width="300"/>
+</p>
+
+### 📑 Trang chi tiết hồ sơ khám
+<p align="center">
+  <img src="./assets/record_detail.png" width="300"/>
+  <img src="./assets/record_detail(2).png" width="300"/>
+</p>
+
+### 👤 Trang cá nhân
+<p align="center">
+  <img src="./assets/profile.png" width="300"/>
+  <img src="./assets/profile(2).png" width="300"/>
+</p>
+
+### ✏️ Trang chỉnh sửa hồ sơ
+<p align="center">
+  <img src="./assets/edit_profile.png" width="300"/>
+</p>
+
+### 🔔 Trang thông báo
+<p align="center">
+  <img src="./assets/notification.png" width="300"/>
+</p>
+
+### ⚙️ Trang cài đặt
+<p align="center">
+  <img src="./assets/settings.png" width="300"/>
+  <img src="./assets/settings(2).png" width="300"/>
+</p>
+
+### 🔒 Trang đổi mật khẩu
+<p align="center">
+  <img src="./assets/change_password.png" width="300"/>
+</p>
+
 
 ---
 
